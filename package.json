@@ -1,0 +1,22 @@
+{
+  "name": "testingnodewithmocha",
+  "version": "1.0.0",
+  "description": "This is the public repo for my Testing Node.js with Mocha course.",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha './test/**/*.spec.js'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jonathanfmills/TestingNodeWithMocha.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jonathanfmills/TestingNodeWithMocha/issues"
+  },
+  "homepage": "https://github.com/jonathanfmills/TestingNodeWithMocha#readme",
+  "dependencies": {
+    "mocha": "^4.0.1"
+  }
+}

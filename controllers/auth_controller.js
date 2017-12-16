@@ -1,0 +1,13 @@
+function AuthController () {
+  function isAuthorized (roles, neededRole) {
+    return roles.indexOf(neededRole) >= 0;
+  }
+  function isAuthorizedAsync(roles, neededRole, cb) {
+    setTimeout(function () {
+      cb(null, roles.indexOf(neededRole) >= 0);
+    }, 0);
+  }
+  return { isAuthorized, isAuthorizedAsync };
+}
+
+module.exports = AuthController();
